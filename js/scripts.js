@@ -12,13 +12,13 @@ function getSetSurvey(event)  {
     language = "Python";
   } else if (question4 === "backEnd")  {
     language = "Assembly";
-  } else if (question4 === "backEnd" && question1 === "Blue" || question5 === "Dogs")  {
+  } else if (question4 === "backEnd" && question1 === "Blue" && question5 === "Dogs")  {
     language = "C++";
-  } else if (question4 === "frontEnd" && question2 === "yes")  {  
+  } else if (question4 === "backEnd" && question2 === "yes")  {  
     language = "C++";
-  } else if (question3 === "cereal")  {
+  } else if (question2 === "no" && question3 === "cereal")  {
     language = "Assembly";
-  } else if (question2 === "no")  {
+  } else if (question2 === "yes" && question5 === "Cats")  {
     language = "Python";
   } else  {
     language = "Stop messing around. Input something real"
