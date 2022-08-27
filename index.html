@@ -9,14 +9,16 @@
   <h1><strong>Determine the best programming language for you!</strong></h1>
   <br>
   <p>When first starting programming it can be difficult to find the right programming language to learn. To help with that
-    process I made this survey to determine what the best language is for you! Go ahead and fill out the survey!
+    process I made this survey to determine what the best language is for you! You will get one of the following languages: 
   </p>
-
+  <ol>
+    <li><em>Python</em></li>
+    <li><em>C++</em></li>
+    <li><em>Assembly</em></li>
+  </ol>
+  
   <form id="survey">
-    <h3 class="survey-desc"><strong>What is your favorite color?</strong></h3>
-    <input type="radio" name="colorFav" value="Green">
-    Green
-    <br>
+    <h3 class="survey-desc"><strong>What is your favorite primary color?</strong></h3>
     <input type="radio" name="colorFav" value="Blue">
     Blue
     <br>
@@ -26,6 +28,40 @@
     <input type="radio" name="colorFav" value="Yellow">
     Yellow
     <br>
+
+    <h3 class="survey-desc"><strong>Do you enjoy bird watching?</strong></h3>
+    <input type="radio" name="birds" value="yes">
+    Yes
+    <br>
+    <input type="radio" name="birds" value="no">
+    No
+
+  <h3 class="survey-desc"><strong>When eating cereal, do you pour the milk first or cereal first?</strong></h3>
+  <input type="radio" name="milkFirst" value="milk">
+    Milk
+  <br>
+  <input type="radio" name="milkFirst" value="cereal">
+  Cereal
+
+  <h3 class="survey-desc"><strong>Do you want to work as a front-end dev or a back-end dev?</strong></h3>
+  <input type="radio" name="devType" value="frontEnd">
+  Front-end
+  <br>
+  <input type="radio" name="devType" value="frontEnd">
+  Back-end
+
+  <h3 class="survey-desc"><strong>Cats or dogs?</strong></h3>
+  <input type="radio" name="pets" value="Dogs">
+  Dogs
+  <br>
+  <input type="radio" name="pets" value="Cats">
+  Cats
+  <br>
+
+  <button type="submit" class="btn">Lets Go!</button>
   </form>
+
+  <h2><strong>The results are in! the best programming language for you is:</strong></h2>
+  <p id="output"></p>
 </body>
 </html>
