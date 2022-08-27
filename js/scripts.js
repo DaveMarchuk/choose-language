@@ -7,6 +7,8 @@ function getSetSurvey(event)  {
   const question5 = document.querySelector("input[name='pets']:checked").value;
 
   let language;
+  let displayResult = document.getElementById("message");
+  displayResult.setAttribute("class","hidden");
 
   if (question4 === "backEnd" && question1 === "Blue" && question5 === "Dogs")  {
     language = "C++";
@@ -26,14 +28,11 @@ function getSetSurvey(event)  {
     language = "Python";
   }
 
-  console.log(language);
+  displayResult.removeAttribute("class");
   document.getElementById("output").innerText = language;
-
 };
 
 window.addEventListener("load", function()  {
   const form = document.getElementById("survey");
-  let resultDisplay = document.getElementById("output");
   form.addEventListener("submit",getSetSurvey);
-  resultDisplay.removeAttribute("class");
 });
