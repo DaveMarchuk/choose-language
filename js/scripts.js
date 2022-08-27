@@ -8,21 +8,24 @@ function getSetSurvey(event)  {
 
   let language;
 
-  if (question4 === "frontEnd")  {
-    language = "Python";
-  } else if (question4 === "backEnd")  {
-    language = "Assembly";
-  } else if (question4 === "backEnd" && question1 === "Blue" && question5 === "Dogs")  {
+  if (question4 === "backEnd" && question1 === "Blue" && question5 === "Dogs")  {
     language = "C++";
   } else if (question4 === "backEnd" && question2 === "yes")  {  
     language = "C++";
-  } else if (question2 === "no" && question3 === "cereal")  {
+  } else if (question2 === "no" && question3 === "cereal" && question4 === "backEnd") {
     language = "Assembly";
-  } else if (question2 === "yes" && question5 === "Cats")  {
+  } else if (question2 === "yes" && question5 === "Cats" && question4 === "frontEnd") {
     language = "Python";
+  } else if (question3 === "no" && question3 === "milk" && question4 === "frontEnd")  {
+    language = "C++";
+  } else if (question3 === "yes" && question4 === "backEnd" && question1 === "Red") {
+    language = "Python";
+  } else if (question1 === "Yellow" && question3 === "milk" && question4 === "backEnd") { 
+    language = "Assembly";
   } else  {
-    language = "Stop messing around. Input something real"
+    language = "Python";
   }
+
   console.log(language);
   document.getElementById("output").innerText = language;
 
@@ -30,5 +33,7 @@ function getSetSurvey(event)  {
 
 window.addEventListener("load", function()  {
   const form = document.getElementById("survey");
+  let resultDisplay = document.getElementById("output");
   form.addEventListener("submit",getSetSurvey);
+  resultDisplay.removeAttribute("class");
 });
