@@ -1,3 +1,33 @@
 .hidden {
   display: none;
 }
+
+.intro-text {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.survey-desc {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align:start;
+}
+
+.output-display {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  text-decoration: ;
+}
+
+.btn  {
+  border: solid gray;
+  border-width: 10px;
+}
+
+body {
+  background-image: -webkit-radial-gradient(circle,cyan, orange);
+}
