@@ -15,7 +15,7 @@
 __This website has a title and a brief description explaining what the webpage does. Then below that are 5 mulitple choice questions, with radio forms for selection. Once the user finishes selecting all of the their answers, they submit their answers below and a message will pop up with their results.__
 
 ## Setup/Installation Requirements  
-* _Link to GitHub page: https://davemarchuk.github.io/choose-language/index.html
+* _Link to GitHub page: https://davemarchuk.github.io/choose-language/index.html_
 * _Clone this repository to your desktop._
 * _Navigate to the top level of the directory._
 * _Open choose-language/index.html._
